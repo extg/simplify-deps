@@ -29,22 +29,34 @@ let source = `[{
     ]
 }]`;
 
-console.log(simlify(context, source));
+console.log(simlify(context, source, {techs: ['css']}));
 
-// [ 'jquery__event',
-//     'jquery__event_type',
-//     'i-bem-dom',
-//     'button',
-//     'button',
-//     'button_focused',
-//     'control',
-//     'button_disabled',
-//     'button_pressed',
-//     'button__text',
-//     'jquery__event',
-//     'button_hovered',
-//     'jquery__event_type_pointer',
-//     'keyboard__codes',
-//     'functions',
-//     'events',
-//     'jquery__event_type' ]
+// [ 'jquery/__event/jquery__event.deps.js',
+//     'jquery/__event/_type/jquery__event_type.deps.js',
+//     'i-bem-dom/i-bem-dom.deps.js',
+//     'button/button.deps.js',
+//     'button/_focused/button_focused.deps.js',
+//     'control/control.deps.js',
+//     'button/_disabled/button_disabled.deps.js',
+//     'button/_pressed/button_pressed.deps.js',
+//     'button/__text/button__text.deps.js',
+//     'button/_hovered/button_hovered.deps.js',
+//     'jquery/__event/_type/jquery__event_type_pointer.deps.js',
+//     'keyboard/__codes/keyboard__codes.deps.js',
+//     'functions/functions.deps.js',
+//     'events/events.deps.js',
+//     'jquery/__event/jquery__event.css',
+//     'jquery/__event/_type/jquery__event_type.css',
+//     'i-bem-dom/i-bem-dom.css',
+//     'button/button.css',
+//     'button/_focused/button_focused.css',
+//     'control/control.css',
+//     'button/_disabled/button_disabled.css',
+//     'button/_pressed/button_pressed.css',
+//     'button/__text/button__text.css',
+//     'button/_hovered/button_hovered.css',
+//     'jquery/__event/_type/jquery__event_type_pointer.css',
+//     'keyboard/__codes/keyboard__codes.css',
+//     'functions/functions.css',
+//     'events/events.css' ]
+
